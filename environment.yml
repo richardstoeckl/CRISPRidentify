@@ -49,5 +49,6 @@ dependencies:
   - keras==2.4.3
   - libffi=3.2.1
   - spacerplacer
+  - gdown
   - pip:
     - python-Levenshtein
