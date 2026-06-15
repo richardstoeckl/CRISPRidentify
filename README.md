@@ -18,12 +18,13 @@ genomic region is a CRISPR array.
 1. **Clone the repository** with submodules:
 
    ```
-   git clone --recurse-submodules https://github.com/BackofenLab/CRISPRidentify.git
+   git clone --recurse-submodules https://github.com/BackofenLab/CRISPRidentify.git && cd CRISPRidentify
    ```
 
    Or alternatively, if already cloned, run:
 
    ```
+   cd CRISPRidentify
    git submodule update --init --recursive
    ```
 
@@ -56,9 +57,8 @@ genomic region is a CRISPR array.
    # Download
    gdown --fuzzy https://drive.google.com/file/d/1YbTxkn9KuJP2D7U1-6kL1Yimu_4RqSl1/view?usp=sharing
    gdown --fuzzy https://drive.google.com/file/d/1Nc5o6QVB6QxMxpQjmLQcbwQwkRLk-thM/view?usp=sharing
-   # Extract
-   tar -xzf HMM_sets.tar.gz -C tools/CRISPRcasIdentifier/CRISPRcasIdentifier/
-   tar -xzf trained_models.tar.gz -C tools/CRISPRcasIdentifier/CRISPRcasIdentifier/
+   # Move the downloaded files to the correct location
+   mv *.tar.gz tools/CRISPRcasIdentifier/CRISPRcasIdentifier/
    ```
 
 ## Running CRISPRidentify
